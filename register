@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>register</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script src="login.js"></script>
+</head>
+<body>
+<h2><marquee>&clubs;Welcome to Registration Section&clubs;</marquee></h2>
+	<div class="login-page">
+	  <div class="form" >
+		<form action="index.php" method="post">
+<p align="center">Enter Name<input name="uname"type="text" placeholder="username" maxlength="32" size="16" required>
+<p align="center">Enter User-id<input name="uid" type="text" placeholder="userId" maxlength="10" size="16" required>
+<p align="center">Enter password<input name="pwd" type="password" placeholder="password" minlength="8" size="16" required>
+<p align="center">Re-enter password<input name="repwd"type="password" placeholder="password" minlength="8" size="16" required>
+<p align="center">Enter your Department<select name="dept" size="1" required>
+<option name="cse" value="CSE">CSE
+<option name="it" value="IT">IT
+<option name="mech" value="MECH">MECH
+<option name="eee" value="EEE">EEE
+<option name="ece" value="ECE">ECE
+<option name="civ" value="CIV">CIV
+<option name="chem" value="CHEM">CHEM
+</select>
+<p align="center"><input type="submit" name="registration" value="Register">
+</form>
+	  </div>
+	</div>
+</body>

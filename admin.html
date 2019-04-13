@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	 <link rel="stylesheet" type="text/css" href="login.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="login.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+
+
+<style>
+
+
+
+
+
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+   
+}
+</style>
+</head>
+<body>
+   <div class="login-page">
+    <form action="admin.php" method="POST" >
+     <h1>EXAM DETAILS</h1>
+  <div class="textbox">Exam-Date<input type="date" id="date" name="edate" required>
+  </div>
+<div class="textbox">
+    Exam-Day<select name= "day" required>
+	<option value="Monday">Monday</option>
+	<option value="Tuesday">Tuesday</option>
+	<option value="Wednesday">Wednesday</option>
+	<option value="Thursday">Thrusday</option>
+	<option value="Friday">Friday</option>
+	<option value="Saturday">Saturday</option>
+	</select>
+</div>
+ <div class="textbox">
+    TIME<input type="time" name="tm"
+       min="9:00" max="18:00" required>
+</div>
+<div class="textbox">
+TillTime<input type="time"  name="tt"
+       min="9:00" max="18:00" required>
+</div>
+<div class="textbox">
+SUBJECT<input type="text" placeholder="enter SUBJECT" name="sub" required>
+</div>
+<input type="Submit" class="btn" value="SUBMIT">
+</form>
+<form method="post" action="display.php">
+<input type="Submit" class="btn" value="DISPLAY">
+</form>
+</div>
+</body>
+</html>

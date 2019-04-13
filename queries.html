@@ -1,0 +1,49 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script type="text/javascript">
+	function checkForm(form)
+	{
+	 if(form.edate.value == form.tdate.value) {
+		 alert("Error: given date and to date  must not be same");
+			return false;
+		}
+	}
+	</script>
+<body>
+	<div class="login-page">
+		<h1>Queries Page</h1>
+		<form action="queries.php" method="POST" onsubmit="return checkForm(this);">
+			<div class="textbox">
+Enter User-id<input name="uid" type="text" placeholder="userId" maxlength="10" size="16" required>
+</div>
+ <div class="textbox">Given Exam-Date<input type="date" id="date" name="edate" required></div>
+  <div class="textbox">To Exam-Date<input type="date" id="date" name="tdate" required></div>
+<div class="textbox">
+Enter your Department
+<select name="dept" required>
+<option value="CSE">CSE</option>
+<option value="IT">IT</option>
+<option value="MECH">MECH</option>
+<option value="EEE">EEE</option>
+<option value="ECE">ECE</option>
+<option value="CIV">CIV</option>
+<option value="CHEM">CHEM</option>
+</select>
+</div>
+<div class="textbox">
+	Enter your Section
+	<select name="section" required>
+		<option value="A">A</option>
+		<option value="B">B</option>
+		<option value="C">C</option>
+	</select>
+</div>
+<div class="textbox">
+	Reason<input name="re" type="text" placeholder="Give your Reason" required>
+</div>
+<p align="center"><input type="submit" id="submit" class="btn" name="submit" value="Submit">
+</form>
+	  </div>
+	</div>
+</body>

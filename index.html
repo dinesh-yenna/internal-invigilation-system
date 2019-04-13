@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+<head>
+	 <meta charset="utf-8">
+     <title>Log In</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script src="login.js"></script>
+<style>
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(hi2.jpg) no-repeat;
+  background-size:cover;
+}</style>
+</head>
+<body>
+ <form class="login-form" name="formReg" onsubmit="validateLogForm();" action="login.php" method="post">
+	<div class="login-page">
+		 <h1>Login</h1>
+	      <div class="textbox">
+		 <i class="fas fa-user"></i>
+		  <input name="uid" type="text" placeholder="user-id" required="Enter user-id"/>
+		</div>
+		<div class="textbox">
+            <i class="fas fa-lock"></i>
+            <input name="pwd" type="password" placeholder="password" required/>
+        </div>
+ <input type="Submit" class="btn" value="Login">
+		  <p class="message">Not registered? <a href="register.html">Create an account</a></p>
+	</div>
+  </form>
+</body>

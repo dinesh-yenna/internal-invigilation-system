@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>register</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script type="text/javascript">
+	function checkForm(form)
+	{
+	 if(form.pwd.value != form.repwd.value) {
+		 alert("Error: Password and Confirm Password must be same");
+			return false;
+		}
+	}
+	</script>
+</head>
+<body>
+ 
+<h2><marquee>&clubs;Welcome to Registration Section&clubs;</marquee></h2>
+	<div class="login-page">
+		<form action="index.php" method="POST" onsubmit="return checkForm(this);">
+			<div class="textbox">
+Enter Name<input name="uname" type="text" placeholder="username" maxlength="32" size="16" required>
+</div>
+<div class="textbox">
+Enter User-id<input name="uid" type="text" placeholder="userId" maxlength="10" size="16" required>
+</div>
+<div class="textbox">
+Enter password<input name="pwd" type="password" placeholder="password" minlength="8" size="16" required>
+</div>
+<div class="textbox">
+Re-enter password<input name="repwd"type="password" placeholder="password" minlength="8" size="16" required>
+</div>
+<div class="textbox">
+Enter your Department
+<select name="dept" required>
+<option value="CSE">CSE</option>
+<option value="IT">IT</option>
+<option value="MECH">MECH</option>
+<option value="EEE">EEE</option>
+<option value="ECE">ECE</option>
+<option value="CIV">CIV</option>
+<option value="CHEM">CHEM</option>
+</select>
+</div>
+<div class="textbox">
+	Enter your Section
+	<select name="section" required>
+		<option value="A">A</option>
+		<option value="B">B</option>
+		<option value="C">C</option>
+	</select>
+</div>
+<p align="center"><input type="submit" id="submit" class="btn" name="submit" value="Register">
+<p align="center"><input type="reset" id="reset" class="btn" name="reset" value="clear">
+</form>
+	  </div>
+	</div>
+</body>

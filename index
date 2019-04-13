@@ -1,0 +1,29 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "Internal_Invigilation";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+function NewUser()
+{
+	$nam = $_POST['uname'];
+	$ui = $_POST['uid'];
+	$pw = $_POST['pwd'];
+	$repw = $_POST['repwd'];
+	$dep = $_POST['dept'];
+	$sql = "INSERT INTO regisration (uname,uid,pwd,repwd,dept) VALUES ('$nam', '$ui' ,'$pw', '$repw','$dep')";
+	$data = mysql_query ($sql)or die(mysql_error());
+	
+	echo "YOUR REGISTRATION IS COMPLETED...";
+	
+}
+
+$conn->close();
+?> 

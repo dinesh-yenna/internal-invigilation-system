@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+
+
+
+    <!-- Bootstrap core CSS -->
+     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+     <style>
+
+
+
+
+
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+   
+}
+</style>
+
+
+</head>
+
+<body>
+
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+<div class="login-page">
+ <form method="post" action="faculty.php">
+   <h1>FACULTY DETAILS</h1>
+   <div class="textbox">
+     Name<input type="text" placeholder="Enter Faculty name" name="fname" required>
+   </div>
+   <div class="textbox">
+   Department<select name="dept" required>
+   <option value="CSE">CSE</option>
+   <option value="IT">IT</option>
+   <option value="MECH">MECH</option>
+   <option value="EEE">EEE</option>
+   <option value="ECE">ECE</option>
+   <option value="CIV">CIV</option>
+   <option value="CHEM">CHEM</option>
+   </select>
+</div>
+<div class="textbox">
+  Enter your Section
+  <select name="section" required>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+  </select>
+</div>
+   <div class="textbox">
+     Faculty ID<input type="text" placeholder="Enter id" name="fid" required>
+   </div>
+   <div class="textbox">Time:From<input type="time" name="frm" min="9:00" max="18:00" required>
+   </div>
+   <div class="textbox">Till Time<input type="time"  name="till" min="9:00" max="18:00" required>
+   </div>
+   <div class="textbox">DAY<select name= "fday" required>
+     <option value="Monday">Monday</option>
+     <option value="Tuesday">Tuesday</option>
+     <option value="Wednesday">Wednesday</option>
+     <option value="Thursday">Thrusday</option>
+     <option value="Friday">Friday</option>
+     <option value="Saturday">Saturday</option>
+     </select>
+   </div>
+   <input type="Submit" class="btn" value="SUBMIT">
+ </form>
+</div>
+</body>
+</html>
